@@ -1,0 +1,45 @@
+<script id="easepage-template" type="text/x-underscore-template">
+    <div id="easepage">
+        <div class="easebox js-language pageindex pop_window" data-page="subtraction" data-color="#f44336" data-pop="<"><span>前页</span></div>
+        <% var halfPage=Math.ceil((data.showNum/2))%>
+        <% var halfleft=data.nowpage-halfPage; var halfright=data.nowpage+halfPage-1%>
+        <% if(halfright>(data.all_page)){halfright=(data.all_page);halfleft=data.all_page-data.showNum}%>
+        <%if((data.nowpage)-halfPage>1){%>
+        <%for (var l=(halfleft);l<(halfright+1);l++){%>
+        <%if(l==data.nowpage){%>
+
+        <div class="easebox easebox-active pop_window js-theme" data-page="<%=l%>" data-color="#f44336" data-pop="<%=l%>"><span><%=l%></span></div>
+        <%}else{%>
+        <div class="easebox pop_window js-theme" data-page="<%=l%>" data-pop="<%=l%>" data-color="#f44336"><span><%=l%></span></div>
+        <%}%>
+
+        <%}%>
+        <%}else{%>
+        <%for(var m=1;m<(data.showNum+1);m++){%>
+        <%if(m==data.nowpage){%>
+
+        <div class="easebox easebox-active pop_window js-theme" data-page="<%=m%>" data-color="#f44336" data-pop="<%=m%>"><span><%=m%></span></div>
+        <%}else{%>
+        <div class="easebox pop_window js-theme" data-page="<%=m%>" data-pop="<%=m%>" data-color="#f44336"><span><%=m%></span></div>
+        <%}%>
+        <%}%>
+
+        <!--开启或关闭搜索框-->
+        <%if(data.acceptsearch==true){%>
+        <div class=" pop_window mysearch js-theme" data-pop="输入跳转页数" data-color="#f44336"><input type="text" class="inputbox js-mysearch"/></div>
+        <div class="mysearch go_search"><span>跳转</span></div>
+        <%}%>
+        <%}%>
+
+        <!--<%for(var y=0;y<(data.all_page);y++){%>-->
+        <!--<%if(y<(data.showNum)){%>-->
+        <!--<div class="easebox"><span><%=y+1%></span></div>-->
+        <!--<%}else{%>-->
+        <!--<div class="easebox"><span>...</span></div>-->
+        <!--<div class="easebox"><span><%=data.all_page%></span></div>-->
+        <!--<% break;}%>-->
+        <!--<%}%>-->
+
+        <div class="easebox js-language pageindex pop_window" data-page="plus" data-pop=">"><span>后页</span></div>
+    </div>
+</script>

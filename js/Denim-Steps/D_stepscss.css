@@ -1,0 +1,65 @@
+#Denim-steps {
+  position: relative; }
+  #Denim-steps .step_wall {
+    width: 264.5px;
+    text-align: center;
+    display: inline-block;
+    position: relative; }
+  #Denim-steps .step_line {
+    display: inline-block;
+    position: absolute;
+    width: 256.5px;
+    height: 1px;
+    background: #d4d5d5;
+    top: 21px; }
+  #Denim-steps .step_detail {
+    font-size: 12px;
+    min-height: 32px;
+    color: #999999; }
+  #Denim-steps .step_title {
+    color: #999999; }
+  #Denim-steps .bamboo_icon {
+    font-size: 38px; }
+  #Denim-steps .bamboo_icon_f {
+    color: #1aaf7a; }
+  #Denim-steps .bamboo_icon_e {
+    color: #f5222d; }
+  #Denim-steps .bamboo_icon_p {
+    color: #66ccff; }
+  #Denim-steps .bamboo_icon_w {
+    color: #f45400; }
+  #Denim-steps .pop_alert_f {
+    background: #1aaf7a !important; }
+  #Denim-steps .pop_alert_e {
+    background: #f5222d !important; }
+  #Denim-steps .pop_alert {
+    text-align: center;
+    background: #d4d5d5;
+    position: absolute;
+    color: #fffefe;
+    padding: 2.5px 2px 2.5px 2px;
+    font-size: 15px;
+    margin-top: 6.5px;
+    border-radius: 7px;
+    cursor: pointer; }
+  #Denim-steps .select_button {
+    display: none;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    background: #e0e0e0b3;
+    z-index: 5;
+    border-radius: 7px;
+    -moz-box-shadow: 2px 2px 5px #333333;
+    -webkit-box-shadow: 2px 2px 5px #333333;
+    box-shadow: 2px 2px 5px #333333; }
+    #Denim-steps .select_button div {
+      width: 24%;
+      display: inline-block;
+      text-align: center;
+      color: #7a7a7a;
+      cursor: pointer; }
+      #Denim-steps .select_button div:hover {
+        color: #66ccff; }
+
+/*# sourceMappingURL=D_stepscss.css.map */

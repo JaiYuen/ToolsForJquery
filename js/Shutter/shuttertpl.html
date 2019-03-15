@@ -1,0 +1,27 @@
+<script id="shutter-template" type="text/x-underscore-template">
+<div id="shutter">
+<div id="denim-shutter">
+<%_.each(data,function(item,index){%>
+    <div class="outer-shutter">
+    <div class="inner-shutter"><%=item.content%></div>
+    <%if(item.timeCurrent=="now_current"){%>
+    <% var dates= new Date(); var curdate=dates.toLocaleDateString()%>
+    <div class="shutter-right"><%=curdate%></div>
+    <%}else{%>
+    <div class="shutter-right"><%=item.timeCurrent%></div>
+    <%}%>
+    </div>
+    <%})%>
+</div>
+<div id="denim-shutter-time">
+    <%if(timebox){%>
+    <div class="shutter-time"></div>
+    <div class="squ-1"></div>
+    <div class="cir-1"></div>
+    <div class="squ-2"></div>
+    <div class="squ-3"></div>
+    <div class="cir-2"></div>
+    <%}%>
+</div>
+</div>
+</script>

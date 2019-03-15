@@ -1,0 +1,44 @@
+<script id="D_moment-template" type="text/x-underscore-template">
+<div id="D_moment">
+    <div class="outer-box">
+      <div class="title"><i class="icon iconfont icon-BAI-zuojiantou icon_color left_icon" data-mon=<%=(data.mouth_pre_show)%>></i><span class="now_year" data-year="<%=data.year%>"><span class="year-text"><%=data.year%></span>
+      <div class="children_hov_box">
+         <%_.each(data.show_data.yearArray,function(item,index){%>
+          <div class="children-year"><%=item%></div>
+          <%})%>
+      </div>
+      </span><span class="moon"><span class="moon-text"><%=(data.mouth_show)+1%></span>
+      <div class="children_moon_hov_box">
+      <%for(var l=1;l<13;l++){%>
+          <div class="children-moon"><%=l%></div>
+          <%}%>
+      </div>
+      </span><span>星期<%=data.ISO%></span><i class="icon iconfont icon-BAI_xingxing icon_today left_icon"></i><i class="icon iconfont icon-BAI-youjiantou icon_color right_icon" data-mon=<%=(data.mouth_next_show)%>></i></div>
+      <div class="Tsu-title show-box"><span>日</span><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span></div>
+      <div class="Dat-title show-box">
+          <% _.each(data.show_data.dateArray,function(item,index){%>
+          <% if(index<(data.pre_bubble)){%>
+
+          <div class="Dat bubble" data-mon=<%=(data.mouth_pre_show+1)%> data-year=<%=(data.year-1)%>><%=item%></div>
+          <%}else if(index>(data.next_bubble)){%>
+
+          <div class="Dat bubble" data-mon=<%=(data.mouth_next_show+1)%> data-year=<%=(Number(data.year+1))%>><%=item%></div>
+
+          <%}else{%>
+              <%if(item==data.date){%>
+          <div class="Dat active" data-mon=<%=(data.mouth_show+1)%> data-year=<%=(data.year)%>><%=item%></div>
+          <%}else{%>
+          <div class="Dat"  data-mon=<%=(data.mouth_show+1)%> data-year=<%=(data.year)%>><%=item%></div>
+          <%}%>
+          <%}%>
+          <%})%>
+      </div>
+        <div class="cancel_box">
+            <span class="cancel_span"><i class="icon iconfont icon-BAI-guanbi"></i></span>
+        </div>
+    </div>
+</div>
+
+
+</script>
+

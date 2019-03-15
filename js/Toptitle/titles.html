@@ -1,0 +1,26 @@
+<script id="carousel-template" type="text/x-underscore-template">
+
+<div id="Jtitle">
+    <%
+    _.each(data,function(item,index){
+    %>
+
+    <div class="partitle hvr-overline-from-center">
+      <span class="par_txt" data-url="<%=item.url%>"><%=item.partitle%></span>
+      <div class="all_chititle">
+      <%_.each(item.child,function(child,index){
+      %>
+        <div class="chititle hvr-radial-out" data-url="<%=child.url%>">
+            <span><%=child.childtitle%></span>
+        </div>
+      <%
+        })
+      %>
+    </div>
+    </div>
+
+    <%
+    })
+    %>
+</div>
+</script>

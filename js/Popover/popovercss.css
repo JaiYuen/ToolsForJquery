@@ -1,0 +1,52 @@
+.pop_window {
+  position: relative; }
+
+.div-pop {
+  position: absolute;
+  background: #f44336;
+  bottom: 120%;
+  font-size: 13px;
+  min-width: 35px;
+  padding: 5px 2px 5px 2px;
+  text-align: center;
+  left: -16%;
+  border-radius: 7px;
+  display: none;
+  color: #ffffff;
+  z-index: 2; }
+
+.sjx {
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  background: #F44336;
+  bottom: 107%;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  display: none; }
+
+.pop_window:hover .div-pop {
+  display: block;
+  animation: popshow .5s forwards;
+  -webkit-animation: popshow .5s forwards;
+  /*Safari and Chrome*/ }
+.pop_window:hover .sjx {
+  display: block;
+  animation: popshow .5s forwards;
+  -webkit-animation: popshow .5s forwards;
+  /*Safari and Chrome*/ }
+
+@keyframes popshow {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes popshow /*Safari and Chrome*/ {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*# sourceMappingURL=popovercss.css.map */

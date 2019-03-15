@@ -1,0 +1,21 @@
+<script id="spy-template" type="text/x-underscore-template">
+<div id="scrollspy" class="all-box-default">
+    <div class="chilspy hvr-curl-bottom-right" data-index="default-gotop"><i class=" icon iconfont icon-BAI-shangjiantou"></i></div>
+    <%
+    _.each(data,function(item,index){
+    if(!item.title){item.title=""}
+    if(!item.url){item.url="#"}
+    if(!item.icon){
+    %>
+    <div class="chilspy hvr-curl-bottom-right" data-index="<%=index%>">
+        <div class="animtebox" data-url="<%=item.url%>"> <%=item.title%></div>
+    </div>
+    <%}else{%>
+    <div class="chilspy hvr-curl-bottom-right" data-index="<%=index%>"><i class=" icon iconfont <%=item.icon%>"></i>
+    <div class="animtebox" data-url="<%=item.url%>"> <%=item.title%></div>
+    </div>
+    <%}%>
+    <%})%>
+    <div class="chilspy hvr-curl-bottom-right" data-index="default-bottom"><i class=" icon iconfont icon-BAI_xingxing"></i></div>
+</div>
+</script>

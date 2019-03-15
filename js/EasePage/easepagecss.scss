@@ -1,0 +1,44 @@
+#easepage{
+
+  .pageindex{
+    min-width: 50px !important;
+  }
+  .easebox{
+    display: inline-block;
+    width: auto;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #f44336;
+    border-radius: 6px;
+    min-width: 25px;
+    cursor: pointer;
+
+    & .span{
+      display:block;
+    }
+  }
+  .easebox-active{
+    background: #F44336;
+    color: white;
+  }
+  .mysearch{
+    width: 22px;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #f44336;
+    border-radius: 6px;
+    min-width: 25px;
+    cursor: pointer;
+  }
+  .inputbox{
+    width: inherit;
+    border-style:none;
+    outline: none;
+  }
+.go_search{
+  width: 50px !important;
+  background: #f44336;
+  color: #ffffff;
+}
+}

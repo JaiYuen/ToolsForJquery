@@ -1,0 +1,38 @@
+<script id="Denim-carousel-template" type="text/x-underscore-template">
+<div id="denim-carousel">
+    <div class="flip_images_wall">
+    <%_.each(data,function(item,index){%>
+    <div class="wei_qiang" data-index=<%=index%>>
+        <img src="<%=item.src%>" class="flip_images">
+    </div>
+    <%})%>
+    </div>
+    <div class="left_arrow">
+        <i class="icon iconfont icon-BAI-zuojiantou"></i>
+    </div>
+    <div class="right_arrow">
+        <i class="icon iconfont icon-BAI-youjiantou "></i>
+    </div>
+    <%if(small==true){%>
+    <div class="small_window">
+        <%_.each(data,function(item,index){%>
+        <div class="small_wei_qiang">
+            <img src="<%=item.src%>" class="small_flip_images">
+        </div>
+        <%})%>
+    </div>
+    <%}%>
+    <%if(cir==true){%>
+    <div class="denim_cir_wall">
+        <%_.each(data,function(item,index){%>
+        <%if(index==0){%>
+        <div class="denim_cir denim_cir<%=index%> cir_active" data-index=<%=index%>> </div>
+        <%}else{%>
+        <div class="denim_cir denim_cir<%=index%>" data-index=<%=index%>> </div>
+        <%}%>
+
+        <%})%>
+    </div>
+    <%}%>
+</div>
+</script>

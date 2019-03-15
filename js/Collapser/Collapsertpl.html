@@ -1,0 +1,19 @@
+<script id="collapser-template" type="text/x-underscore-template">
+    <div id="mega-coll">
+    <%
+    _.each(data,function(item,index){
+    %>
+    <div class="coll-par coll-par<%=index%>" data-index="<%=index%>"><span class="inner-par" data-index="<%=index%>" ><%=item.partitle%></span>
+        <%
+        _.each(item.children,function(items,index){
+        %>
+        <div class="coll-chil  coll-chill<%=index%>" ><%=items.text%></div>
+        <%
+        })
+        %>
+    </div>
+    <%
+    })
+    %>
+    </div>
+</script>

@@ -1,0 +1,35 @@
+<script id="carousel-template" type="text/x-underscore-template">
+    <div class="component">
+        <div id="carousel" class="owl-carousel main-carousel">
+            <%
+            _.each(data, function(item, index) {
+            %>
+            <a href="<%=item.url%>" target="_blank"><div class="item">
+                <img src="<%=item.src%>" alt="" class="image" />
+            </div></a>
+            <%
+            })
+            %>
+        </div>
+        <div class="thumbnails-wrapper">
+            <div class="collapse-button">
+                <div class="icon"></div>
+            </div>
+            <div class="counter">
+                <span class="current-item"></span>/<span class="max-items"></span>
+            </div>
+            <div id="thumbnails" class="owl-carousel">
+                <%
+                _.each(data, function(item, index) {
+                %>
+                <div class="item">
+                    <img src="<%=item.src%>" alt="" class="image" />
+                </div>
+                <%
+                })
+                %>
+            </div>
+        </div>
+    </div>
+
+</script>

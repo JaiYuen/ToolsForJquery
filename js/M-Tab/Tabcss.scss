@@ -1,0 +1,46 @@
+#M-tab{
+  width: inherit;
+  height: inherit;
+  .tab-hide{
+    display: none;
+  }
+  .tab-title-nav{
+    //border-bottom: 1px solid #f44336;
+    background: -webkit-linear-gradient(left, #f44336 , rgba(0,0,0,0));
+    background: -o-linear-gradient(right, #f44336 , rgba(0,0,0,0));
+    background: -moz-linear-gradient(right, #f44336 , rgba(0,0,0,0));
+    background: linear-gradient(to right, #f44336 , rgba(0,0,0,0));
+  }
+  .tab-title{
+    border-radius: 0;
+    background: #f44336;
+    color: #ffffff;
+    position: relative;
+  }
+  .title-triangle{
+    position: absolute;
+    bottom: -6px;
+    right: 46%;
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+
+  }
+  .tab-content{
+    width: inherit;
+    height: calc(100% - (10px + 29px));
+    position: relative;
+  }
+  .tab-content-child{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+  }
+}

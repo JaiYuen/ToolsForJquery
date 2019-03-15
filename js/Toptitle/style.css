@@ -1,0 +1,47 @@
+@keyframes mymove {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 2; } }
+#Jtitle {
+  width: 100%;
+  z-index: 10; }
+  #Jtitle .par_txt {
+    margin-bottom: 15px;
+    display: block; }
+  #Jtitle .partitle {
+    display: inline-block;
+    font-size: 15px;
+    padding: 15px 0 2px 0;
+    min-width: 200px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    border-bottom: 2px solid #F44336; }
+    #Jtitle .partitle:hover .all_chititle {
+      display: block;
+      height: auto;
+      animation: mymove 1s forwards;
+      -moz-animation: mymove 1s forwards;
+      /* Firefox */
+      -webkit-animation: mymove 1s forwards;
+      /* Safari and Chrome */
+      -o-animation: mymove 1s forwards;
+      /* Opera */ }
+  #Jtitle .chititle {
+    cursor: pointer;
+    padding: 10px 0;
+    background: white;
+    width: 100%; }
+  #Jtitle .all_chititle {
+    position: absolute;
+    z-index: 5;
+    top: 54px;
+    display: none;
+    opacity: 0;
+    border: 1px solid #F44336;
+    border-top: 0;
+    height: 0;
+    width: 100%; }
+
+/*# sourceMappingURL=style.css.map */

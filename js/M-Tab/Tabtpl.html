@@ -1,0 +1,36 @@
+<script id="tab-template" type="text/x-underscore-template">
+    <div id="M-tab">
+    <div class="tab-title-nav">
+    <%
+    _.each(data,function(item,index){
+        if(index=="0"){
+    %>
+    <div class="mega-button mega-color-default tab-title js-title<%=index%>" data-pindex="<%=index%>"><%=item.title%>
+    <div class="title-triangle js-triangle<%=index%>"></div>
+    </div>
+        <%} else{%>
+        <div class="mega-button mega-color-default tab-title js-title<%=index%>" data-pindex="<%=index%>"><%=item.title%>
+            <div class="title-triangle js-triangle<%=index%> tab-hide"></div>
+        <%}%>
+    <%
+    })
+    %>
+    </div>
+    <div class="tab-content">
+        <%
+        _.each(data,function(item,index){
+
+        if(index=="0"){
+        %>
+        <div class="tab-content-child  js-content<%=index%>" data-cindex="<%=index%>"></div>
+        <%
+        }else{
+        %>
+        <div class="tab-content-child  js-content<%=index%> tab-hide" data-cindex="<%=index%>"></div>
+        <%}%>
+        <%
+        })
+        %>
+    </div>
+    </div>
+</script>

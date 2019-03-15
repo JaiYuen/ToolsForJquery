@@ -1,0 +1,22 @@
+#mega-coll {
+  width: 100%;
+  height: 100%; }
+  #mega-coll .coll-chil {
+    display: none;
+    background: #ffffff;
+    padding: 10px 0 10px 20px;
+    color: #000000;
+    border-bottom: 1px solid #f443361f; }
+  #mega-coll .coll-par {
+    width: 100%;
+    /* padding: 10px 0 10px 20px; */
+    background: #F44336;
+    color: white;
+    border-bottom: 1px solid #efdbdb;
+    border-right: 1px solid #efdbdb; }
+  #mega-coll .inner-par {
+    padding: 10px 0 10px 20px;
+    display: inline-block;
+    width: 96%; }
+
+/*# sourceMappingURL=Collapsercss.css.map */

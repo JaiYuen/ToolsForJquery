@@ -1,0 +1,46 @@
+.Denim-big-img-hide {
+  position: absolute;
+  z-index: -10;
+  opacity: 0;
+  -moz-box-shadow: 3px 3px 10px #140402;
+  -webkit-box-shadow: 3px 3px 10px #140402;
+  box-shadow: 3px 3px 10px #140402; }
+  .Denim-big-img-hide::before {
+    background: #d1d1d1;
+    background: -moz-linear-gradient(-45deg, #d1d1d1 1%, rgba(209, 209, 209, 0.12) 10%, rgba(219, 219, 219, 0.12) 34%, rgba(226, 226, 226, 0.12) 92%, rgba(254, 254, 254, 0.12) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(1%, #d1d1d1), color-stop(10%, rgba(209, 209, 209, 0.12)), color-stop(34%, rgba(219, 219, 219, 0.12)), color-stop(92%, rgba(226, 226, 226, 0.12)), color-stop(100%, rgba(254, 254, 254, 0.12)));
+    background: -webkit-linear-gradient(-45deg, #d1d1d1 1%, rgba(209, 209, 209, 0.12) 10%, rgba(219, 219, 219, 0.12) 34%, rgba(226, 226, 226, 0.12) 92%, rgba(254, 254, 254, 0.12) 100%);
+    background: -o-linear-gradient(-45deg, #d1d1d1 1%, rgba(209, 209, 209, 0.12) 10%, rgba(219, 219, 219, 0.12) 34%, rgba(226, 226, 226, 0.12) 92%, rgba(254, 254, 254, 0.12) 100%);
+    background: -ms-linear-gradient(-45deg, #d1d1d1 1%, rgba(209, 209, 209, 0.12) 10%, rgba(219, 219, 219, 0.12) 34%, rgba(226, 226, 226, 0.12) 92%, rgba(254, 254, 254, 0.12) 100%);
+    background: linear-gradient(135deg, #d1d1d1 1%, rgba(209, 209, 209, 0.12) 10%, rgba(219, 219, 219, 0.12) 34%, rgba(226, 226, 226, 0.12) 92%, rgba(254, 254, 254, 0.12) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1d1', endColorstr='#fefefe', GradientType=1 );
+    content: '';
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
+
+.ori_img:hover + .Denim-big-img-hide {
+  display: block;
+  animation: ori_show 1s forwards;
+  -webkit-animation: ori_show 1s forwards;
+  /*Safari and Chrome*/
+  z-index: 10; }
+
+.img-box {
+  position: relative; }
+
+@keyframes ori_show {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-webkit-keyframes ori_show /*Safari and Chrome*/ {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+/*# sourceMappingURL=oriimgcss.css.map */

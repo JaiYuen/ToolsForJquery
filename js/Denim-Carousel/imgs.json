@@ -1,0 +1,26 @@
+{
+  "data":[
+    {"src":"js/Carousel/imgs/moon.png",
+      "url":"https://www.baidu.com/"
+    },
+    {"src":"js/OriginImg/imgs/line1.jpg",
+      "url":"https://www.baidu.com/"
+    },
+    {"src":"js/Carousel/imgs/fox.jpg",
+      "url":"https://www.baidu.com/"
+    },
+    {"src":"js/OriginImg/imgs/line2.jpg",
+      "url":"https://www.baidu.com/"
+    },
+    {"src":"js/OriginImg/imgs/line3.jpg",
+      "url":"https://www.baidu.com/"
+    },
+    {"src":"js/OriginImg/imgs/line4.jpg",
+      "url":"https://www.baidu.com/"
+    },
+    {"src":"js/OriginImg/imgs/line5.jpg",
+      "url":"https://www.baidu.com/"
+    }
+
+  ]
+}

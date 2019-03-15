@@ -1,0 +1,41 @@
+<script id="steps-template" type="text/x-underscore-template">
+<div id="Denim-steps">
+    <div class="select_button">
+        <div class="s_b_s">finish</div>
+        <div class="s_b_s">wait</div>
+        <div class="s_b_s">process</div>
+        <div class="s_b_s">error</div>
+    </div>
+    <%_.each(data,function(item,index){%>
+
+    <div class="step_wall">
+        <%if(index==0){}else{%>
+        <div class="step_line step_line<%=index%>" data-index="<%=index%>"></div>
+        <!--我们还需要一个浮动提示牌-->
+        <%if(item.status=="finish"){%>
+        <div class="pop_alert pop_alert_f" data-index="<%=index%>"><%=item.status%></div>
+        <%}else if(item.status=="error"){%>
+        <div class="pop_alert pop_alert_e" data-index="<%=index%>"><%=item.status%></div>
+        <%}else if(item.status=="wait"){%>
+        <div class="pop_alert pop_alert_w" data-index="<%=index%>"><%=item.status%></div>
+        <%}else if(item.status=="process"){%>
+        <div class="pop_alert pop_alert_p" data-index="<%=index%>"><%=item.status%></div>
+        <%}%>
+        <%}%>
+    <div class="wall-bamboo wall-bamboo<%=index%>" data-index="<%=index%>" data-status="<%=item.status%>">
+        <%if(item.status=="finish"){%>
+        <div class="bamboo-i"><i class="icon iconfont icon-BAI-fuxuankuangs bamboo_icon bamboo_icon_f"></i></div>
+        <%}else if(item.status=="error"){%>
+        <div class="bamboo-i"><i class="icon iconfont icon-BAI-guanbi bamboo_icon bamboo_icon_e"></i></div>
+        <%}else if(item.status=="process"){%>
+        <div class="bamboo-i"><i class="icon iconfont icon-BAI-fuxuankuang bamboo_icon bamboo_icon_p"></i></div>
+        <%}else if(item.status=="wait"){%>
+        <div class="bamboo-i"><i class="icon iconfont icon-BAI-tixing bamboo_icon bamboo_icon_w"></i></div>
+        <%}%>
+    </div>
+        <div class="step_title"><%=item.title%></div>
+        <div class="step_detail"><%=item.detail%></div>
+    </div>
+    <%})%>
+</div>
+</script>
