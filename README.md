@@ -45,7 +45,7 @@
 | speed        |    number,default:300ms     |  切换速率  |
 | container        |    default:$(body)    |  父容器  |
 
-下面是data数据源试例
+下面是data数据源示例
 ```javascript
  var data={data:[
             {partitle:"rolling one",children:[
@@ -90,7 +90,7 @@
 | data_store       |    boolean default:true  |是否开启前端数据存储机制,若需与后台交互，需关闭|
 | direction        |    'vertical'\|'horizontal'  |方向,默认为水平(horizontal)|
 
-下面是数据源试例
+下面是数据源示例
 ```javascript
 data:[{title:"step1",detail:"洛水之波，沐浴人心",status:"finish"},
                   {title:"step2",detail:"小隙沉舟，同心方可勠力",status:"finish"},
@@ -162,7 +162,7 @@ data:[{title:"step1",detail:"洛水之波，沐浴人心",status:"finish"},
 | rebuild(object)     |    method|重新加载组件，参数同上，我们会保留原始参数或你覆盖之|
 | stopRoll()      |    method|停止当前循环|
 
-下面是数据源试例:
+下面是数据源示例:
 
 ```javascript
  data:[{
